@@ -6,6 +6,8 @@ confirmedPassword.addEventListener('input', () => {
     let pass = password.value;
     if(confirmedPassword.value !== password.value) {
         confirmedPassword.setCustomValidity("Password does not match");
+        password.style.borderColor = "red";
+        confirmedPassword.style.borderColor = "red";
     }
 
     else {
