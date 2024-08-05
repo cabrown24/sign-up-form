@@ -18,20 +18,54 @@
         </div>
         <div class="container-right">
             <div class="container-right-top">
-                <h3>We are in the process of starting an international, 
-                   revolutionary book club. We'll read 
-                   and learn together as a community. The club doesn't exist yet, but soon we will have a location where we can meet with local members in a safe location. When we're getting close to this time, we'll reach out, likely via email.</h3>
-                <h3>~For the liberation of oppressed people world-wide.</h3>
+                <h3><strong>We</strong> are in the process of starting an international,
+                    revolutionary book club. We'll read
+                    and learn together as a community. The club doesn't exist yet, but soon we will have a location
+                    where we can meet with local members in a safe location. When we're getting close to this time,
+                    we'll reach out, likely via email. Create an account below, for when their is more to this website.</h3>
+                <h2 class="catcher">~For the liberation of oppressed people world-wide.</h2>
             </div>
             <div class="container-right-mid">
-                <form action="./index.html"></form>
                 <h2 class="formHeader">Connect with us.</h2>
+
+                <form action="./index.html" id="myForm">
+
+                    <fieldset>
+                        <label for="firstname"><p>FIRST NAME</p></label>
+                        <input type="text" id="firstname" placeholder="Che">
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="lastname"><p>LAST NAME</p></label>
+                        <input type="text" id="lastname" placeholder="Guevara">
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="email"><p>EMAIL</p></label>
+                        <input type="email" id="email" placeholder="freepalestine@gmail.com">
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="phone"><p>PHONE NUMBER</p></label>
+                        <input type="number" id="phone" maxlength="11">
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="password"><p>PASSWORD</p></label>
+                        <input type="password" id="password">
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="cpassword"><p>CONFIRM PASSWORD</p></label>
+                        <input type="password" id="cpassword">
+                    </fieldset>
                 </form>
             </div>
             <div class="container-right-bottom">
-
+                <button class="btn-submit" type="submit" form="myForm">JOIN</button>
+                <h4>Already joined? <a href="">Log in</a> to view any news.</h4>
             </div>
-          
+
         </div>
     </div>
 </body>

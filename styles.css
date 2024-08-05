@@ -1,5 +1,5 @@
 :root {
-    --main-text-color: black;
+    --main-text-color: rgba(0, 0, 0, 0.471);
     --form-text-color: rgb(168, 168, 168);
     --background-light: #e6daca;
     --background-dark: #b6adaa;
@@ -11,7 +11,7 @@ body {
     max-width: 100%;
     color: var(--main-text-color);
     margin: 0;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family:'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 @font-face {
@@ -20,6 +20,10 @@ body {
          url('./fonts/norse-bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+.catcher {
+    color: rgba(45, 5, 5, 0.755);
 }
 
 .container-main {
@@ -31,7 +35,6 @@ body {
 
 .container-left {
     flex: 0.40;
-    display: flex;
     justify-items: center;
     color:white;
     background-size: 100% 100%;
@@ -39,10 +42,9 @@ body {
 }
 
 .titleBar {
-    flex-basis: 100px; 
     background-color: rgba(0, 0, 0, 0.278);
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 180px;
 }
 
 .titleBar > h1 {
@@ -66,9 +68,64 @@ body {
     flex:1;
     background-color: var(--background-light);
     border-bottom: rgba(0, 0, 0, 0.774) 25px;
+    padding: 3px 50px 50px 27px;
+    box-shadow: 10px 10px 25px 2px black;
+}
+
+#myForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+fieldset {
+    border: none;
+    min-width: 250px;
 }
 
 .container-right-bottom {
     flex:1;
     background-color: var(--background-dark);
+    padding: 40px;
 }
+
+button {
+    background-color: rgb(55, 165, 249);
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: Arial, sans-serif;
+    color: var(--background-light);
+}
+
+button:active {
+    background-color: rgb(148, 203, 246);
+}
+
+input {
+    border: 1px solid silver;
+    border-radius: 3px;
+    min-height: 25px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(131, 201, 255);
+    box-shadow: 0.5px .4px 5px rgb(108, 108, 108);
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input::placeholder {
+    opacity: 28%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
