@@ -1,8 +1,74 @@
+:root {
+    --main-text-color: black;
+    --form-text-color: rgb(168, 168, 168);
+    --background-light: #e6daca;
+    --background-dark: #b6adaa;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    color: var(--main-text-color);
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
 @font-face {
     font-family: 'norsebold';
     src: url('./fonts/norse-bold.woff2') format('woff2'),
          url('./fonts/norse-bold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+.container-main {
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.container-left {
+    flex: 0.40;
+    display: flex;
+    justify-items: center;
+    color:white;
+    background-size: 100% 100%;
+    background-image: url("./tankMan.jpg");
+}
+
+.titleBar {
+    flex-basis: 100px; 
+    background-color: rgba(0, 0, 0, 0.278);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.titleBar > h1 {
+    font-size:50px;
+}
+
+.container-right {
+    flex: 0.60;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-right-top {
+    flex:1;
+    background-color: var(--background-dark);
+    padding: 50px;
+    
+}
+
+.container-right-mid {
+    flex:1;
+    background-color: var(--background-light);
+    border-bottom: rgba(0, 0, 0, 0.774) 25px;
+}
+
+.container-right-bottom {
+    flex:1;
+    background-color: var(--background-dark);
 }
